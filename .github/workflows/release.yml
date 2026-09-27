@@ -45,14 +45,11 @@ jobs:
       - name: Build
         run: cmake --build build --parallel
 
-      - name: Create CMake package
-        run: cmake --build build --target package --parallel
-
       - name: Upload release asset
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release upload \
             "${{ github.event.release.tag_name }}" \
-            build/auto-DNxHD-*.tar.gz \
+            build/auto_DNxHD \
             --clobber
