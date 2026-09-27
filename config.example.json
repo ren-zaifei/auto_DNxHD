@@ -1,0 +1,7 @@
+{
+    "input_dir": "input",
+    "output_dir": "output",
+    "interval": 60,
+    "delete_source": false,
+    "max_workers": 2
+}

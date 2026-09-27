@@ -1,0 +1,8 @@
+{
+  "name": "auto-dnxhd",
+  "version-string": "0.1.0",
+  "dependencies": [
+    "ffmpeg",
+    "nlohmann-json"
+  ]
+}
